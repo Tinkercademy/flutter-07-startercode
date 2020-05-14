@@ -26,23 +26,6 @@ class _LocationScreenState extends State<LocationScreen> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  FlatButton(
-                    onPressed: () {},
-                    child: Icon(
-                      Icons.near_me,
-                      size: 50.0,
-                    ),
-                  ),
-                  FlatButton(
-                    onPressed: () {},
-                    child: Icon(
-                      Icons.location_city,
-                      size: 50.0,
-                    ),
-                  ),
-                ],
               ),
               Padding(
                 padding: EdgeInsets.only(left: 15.0),
@@ -54,7 +37,9 @@ class _LocationScreenState extends State<LocationScreen> {
                     ),
                     Text(
                       '☀️',
-                      style: kConditionTextStyle,
+                      style: TextStyle(
+                        fontSize: 80,
+                      ),
                     ),
                   ],
                 ),
